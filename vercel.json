@@ -1,0 +1,16 @@
+{
+    "buildCommand": "pnpm build && pnpm bundle",
+    "outputDirectory": ".",
+    "builds": [
+        {
+            "src": "/bundle.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/bundle.js"
+        }
+    ]
+}
