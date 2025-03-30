@@ -1,16 +1,10 @@
 {
-    "buildCommand": "pnpm build && pnpm bundle",
-    "outputDirectory": ".",
-    "builds": [
-        {
-            "src": "/bundle.js",
-            "use": "@vercel/node"
-        }
-    ],
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "buildCommand": "pnpm build -i && pnpm bundle",
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/bundle.js"
+            "destination": "/api"
         }
     ]
 }
