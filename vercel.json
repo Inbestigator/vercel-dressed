@@ -1,6 +1,6 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "buildCommand": "pnpm build -i && pnpm bundle",
+    "buildCommand": "pnpm build-bot -i && pnpm bundle",
     "rewrites": [
         {
             "source": "/(.*)",

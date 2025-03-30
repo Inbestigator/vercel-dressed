@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "pnpm build -i && pnpm start",
-    "register": "pnpm build -r && pnpm start",
-    "build": "pnpx deno -A jsr:@dressed/cmd build",
+    "dev": "pnpm build-bot -i && pnpm start",
+    "register": "pnpm build-bot -r && pnpm start",
+    "build-bot": "pnpx deno -A jsr:@dressed/cmd build",
     "start": "pnpx tsx bot.gen.ts",
     "bundle": "pnpx esbuild bot.gen.ts > bot.bundle.js --bundle --minify --platform=node"
   },
