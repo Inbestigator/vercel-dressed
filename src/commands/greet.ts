@@ -1,7 +1,7 @@
 import type { CommandConfig, CommandInteraction } from "@dressed/dressed";
 
 export const config: CommandConfig = {
-  description: "Returns a greeting",
+  description: "Says hello!",
 };
 
 export default async function greet(interaction: CommandInteraction) {

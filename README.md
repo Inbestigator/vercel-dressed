@@ -8,9 +8,8 @@ Bun, and Deno.
 
 ## Commands
 
-- `/counter`: Increments a counter.
-- `/greet`: Returns a greeting.
-- `/trivia`: Gives a random trivia question.
+- `/greet`: Says hello!
+- `/fact`: Gives a random fact.
 
 ## Getting Started
 
@@ -40,12 +39,7 @@ You can try editing your bot by modifying `src/commands/greet.ts`.
 
 ## Deploying
 
-When you're ready, you can try to deploy the bot with Deno deploy:
-
-```sh
-pnpm build
-deployctl deploy --entrypoint=bot.gen.ts
-```
+When you're ready, you can try to deploy the bot on Vercel, for more information on that, see [their documentation](https://vercel.com/docs/deployments).
 
 You can check out
 [the GitHub repository](https://github.com/inbestigator/dressed) - your feedback

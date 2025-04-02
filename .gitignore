@@ -4,4 +4,4 @@ bot.gen.ts
 pnpm-lock.yaml
 node_modules
 .vercel
-bundle.js
+bot.bundle.js
