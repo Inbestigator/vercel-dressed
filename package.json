@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "pnpm build -i && pnpm start",
     "register": "pnpm build -r && pnpm start",
