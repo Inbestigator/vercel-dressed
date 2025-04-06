@@ -1,4 +1,11 @@
-// Vercel is really weird about functions being made during the build step 🤷‍♂️
-// @ts-ignore
-import handler from "../bot.bundle.js";
-export default handler;
+import { createHandlers, createServer } from "@dressed/dressed/server";
+// @ts-ignore Should appear after bundle
+import { commandData, componentData, config } from "../dist/bot.gen.js";
+
+const { runCommand, runComponent } = createHandlers(commandData, componentData);
+const app = createServer(runCommand, runComponent, config);
+
+export default async (req: Request, res: Response) => {
+    await app.ready();
+    return app.server.emit("request", req, res);
+};
