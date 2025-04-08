@@ -1,11 +1,5 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "buildCommand": "pnpm build && pnpm bundle",
-    "outputDirectory": "dist",
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/api"
-        }
-    ]
+    "buildCommand": "pnpm build -- -e /api/bot && pnpm bundle",
+    "outputDirectory": "dist"
 }

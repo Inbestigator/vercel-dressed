@@ -1,5 +1,5 @@
 import { createHandlers, createServer } from "@dressed/dressed/server";
-// @ts-ignore Should appear after bundle
+// @ts-ignore Should appear after bundling
 import { commandData, componentData, config } from "../dist/bot.gen.js";
 
 const { runCommand, runComponent } = createHandlers(commandData, componentData);
